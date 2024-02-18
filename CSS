@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Homepage -->
+    <div id="homepage" class="page">
+        <header class="colored-header">Welcome to Your Website</header>
+        <p class="colored-paragraph">Find out what to expect on our amazing website.</p>
+    </div>
+
+    <!-- About Me -->
+    <div id="about" class="page">
+        <h1 class="colored-heading">Ahian Barnett</h1>
+        <p class="colored-introduction">I am a junior at UHSP studying computer science, i also play on the basketball team and I have an paid internship at this company my brother works at for cybersecurity.</p>
+        <p class="colored-paragraph">My favorite hobby is playing video games and playing basketball which both are extremely fun.</p>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="contact" class="page">
+        <form>
+            <label for="Ahian" class="colored-label">Name</label>
+            <input type="text" id="name" name="name" class="colored-input" required>
+
+            <label for="ahian.barnett@uhsp.edu" class="colored-label">Email</label>
+            <input type="email" id="email" name="email" class="colored-input" required>
+
+            <label for="programming" class="colored-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="colored-input" required>
+
+            <label for="This class will be easy if you study" class="colored-label">Message</label>
+            <textarea id="message" name="message" class="colored-textarea" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
+body {
+    background-color: #f0f0f0; /* Set a background color for all pages */
+    font-family: Arial, sans-serif; /* Set a font for the text */
+}
+
+nav {
+    background-color: #333; /* Set background color for the navigation bar */
+    padding: 10px;
+}
+
+nav a {
+    color: #fff; /* Set text color for navigation bar links */
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.page {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff; /* Set background color for each page */
+}
+
+.colored-header {
+    color: #3498db; /* Set color for the header on the homepage */
+}
+
+.colored-paragraph {
+    color: #e74c3c; /* Set color for the paragraph on the homepage */
+}
+
+.colored-heading {
+    color: #2ecc71; /* Set color for the heading on the About Me page */
+}
+
+.colored-introduction {
+    color: #f39c12; /* Set color for the introduction on the About Me page */
+}
+
+.colored-label {
+    color: #9b59b6; /* Set color for labels in the contact form */
+}
+
+.colored-input,
+.colored-textarea {
+    background-color: #ecf0f1; /* Set background color for input fields in the contact form */
+    border: 1px solid #bdc3c7; /* Add a border to input fields in the contact form */
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
